@@ -7,25 +7,15 @@ class FakturaXLInvoiceStatus
     /**
      * Status faktury - wystawiona
      */
-    const ISSUED = "issued";
-
-    /**
-     * Status faktury - wysłana
-     */
-    const SENT = "sent";
+    const ISSUED = 0;
 
     /**
      * Status faktury - opłacona
      */
-    const PAID = "paid";
+    const PAID = 2;
 
     /**
      * Status faktury - częściowo opłacona
      */
-    const PARTIAL = "partial";
-
-    /**
-     * Status faktury - odrzucona
-     */
-    const REJECTED = "rejected";
+    const PARTIAL = 1;
 }

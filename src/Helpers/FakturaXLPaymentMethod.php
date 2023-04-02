@@ -7,57 +7,47 @@ class FakturaXLPaymentMethod
     /**
      * Metoda płatności - przelew
      */
-    const TRANSFER = "transfer";
+    const TRANSFER = "przelew";
 
     /**
      * Metoda płatności - karta płatnicza
      */
-    const CARD = "card";
+    const CARD = "Karta płatnicza";
 
     /**
      * Metoda płatności - gotówka
      */
-    const CASH = "cash";
+    const CASH = "Gotówka";
 
     /**
      * Metoda płatności - barter
      */
-    const BARTER = "barter";
+    const BARTER = "Barter";
 
     /**
      * Metoda płatności - czek
      */
-    const CHEQUE = "cheque";
-
-    /**
-     * Metoda płatności - weksel
-     */
-    const BILL_OF_EXCHANGE = "bill_of_exchange";
+    const CHEQUE = "Czek";
 
     /**
      * Metoda płatności - opłata za pobraniem
      */
-    const CASH_ON_DELIVERY = "cash_on_delivery";
+    const CASH_ON_DELIVERY = "Opłata za pobraniem";
 
     /**
      * Metoda płatności - kompensata
      */
-    const COMPENSATION = "compensation";
-
-    /**
-     * Metoda płatności - akredytywa
-     */
-    const LETTER_OF_CREDIT = "letter_of_credit";
+    const COMPENSATION = "Kompensata";
     
     /**
      * Metoda płatności - PayU
      */
-    const PAYU = "payu";
+    const PAYU = "PayU";
 
     /**
      * Metoda płatności - PayPal
      */
-    const PAYPAL = "paypal";
+    const PAYPAL = "PayPal";
 
      /**
      * Metoda płatności - nie wyświetlaj

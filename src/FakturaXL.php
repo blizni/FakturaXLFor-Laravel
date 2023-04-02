@@ -69,4 +69,4 @@ class FakturaXL
     }
 }
 
-Fakturownia::__constructStatic();
+FakturaXL::__constructStatic();

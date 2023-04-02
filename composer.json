@@ -29,7 +29,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "blizni\\FXL\\FakturowniaProvider"
+                "blizni\\FXL\\FakturaXLProvider"
             ]
         }
     }
