@@ -5,7 +5,7 @@
 [![Issues](https://img.shields.io/github/issues/blizni/FakturaXLFor-Laravel.svg?style=flat-square)](https://github.com/blizni/FakturaXLFor-Laravel/issues)
 [![License](https://img.shields.io/github/license/blizni/FakturaXLFor-Laravel.svg?style=flat-square)](https://github.com/blizni/FakturaXLFor-Laravel/blob/main/LICENSE)
 
-A Laravel package for easy integration with FakturaXL) API ([fakturaxl.pl](https://fakturaxl.pl)). The package contains custom helper classes which allows easy management with invoices. 
+A Laravel package for easy integration with FakturaXL API ([fakturaxl.pl](https://fakturaxl.pl)). The package contains custom helper classes which allows easy management with invoices. 
 
 ## Features of the package
 
