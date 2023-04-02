@@ -1,6 +1,6 @@
 # FakturaXL For Laravel
 
-[![Latest Version](https://img.shields.io/github/release/blizni/FakturaXLFor-Laravel)](https://packagist.org/packages/blizni/FakturaXLFor-laravel)
+[![Latest Version](https://img.shields.io/github/downloads/blizni/FakturaXLFor-Laravel/total)](https://packagist.org/packages/blizni/FakturaXLFor-laravel)
 [![Last Commit](https://img.shields.io/github/last-commit/blizni/FakturaXLFor-Laravel.svg?style=flat-square)](https://github.com/blizni/FakturaXLFor-Laravel/commit/main)
 [![Issues](https://img.shields.io/github/issues/blizni/FakturaXLFor-Laravel.svg?style=flat-square)](https://github.com/blizni/FakturaXLFor-Laravel/issues)
 [![License](https://img.shields.io/github/license/blizni/FakturaXLFor-Laravel)](https://github.com/blizni/FakturaXLFor-Laravel/blob/main/LICENSE)
