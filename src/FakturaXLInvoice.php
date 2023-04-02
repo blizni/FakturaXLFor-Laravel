@@ -1,13 +1,13 @@
 <?php
 
-namespace MattM\FFL;
+namespace blizni\FXL;
 
-use MattM\FFL\FakturowniaDataObject;
-use MattM\FFL\FakturowniaPosition;
-use MattM\FFL\Helpers\FakturowniaInvoiceKind;
-use MattM\FFL\Helpers\FakturowniaPaymentMethod;
+use blizni\FXL\FakturaXLDataObject;
+use blizni\FXL\FakturaXLPosition;
+use blizni\FXL\Helpers\FakturaXLInvoiceKind;
+use blizni\FXL\Helpers\FakturaXLPaymentMethod;
 
-class FakturowniaInvoice extends FakturowniaDataObject
+class FakturaXLInvoice extends FakturaXLDataObject
 {
     private ?int $id = null;
     public ?string $status = null;
@@ -34,11 +34,11 @@ class FakturowniaInvoice extends FakturowniaDataObject
 
     public float $pricePaid = 0.0;
 
-    public function __construct($kind = FakturowniaInvoiceKind::INVOICE_VAT, $number = "", $language = "pl")
+    public function __construct($kind = FakturaXLInvoiceKind::INVOICE_VAT, $number = "", $language = "pl")
     {
         $this->number = $number;
         $this->kind = $kind;
-        $this->paymentType = FakturowniaPaymentMethod::TRANSFER;
+        $this->paymentType = FakturaXLPaymentMethod::TRANSFER;
 
         $this->issueDate = date("Y-m-d");
         $this->sellDate = date("Y-m-d");
@@ -104,7 +104,7 @@ class FakturowniaInvoice extends FakturowniaDataObject
         $this->language = $primatyLanguage . '/' . $secondaryLanguage;
     }
 
-    public function addPosition(FakturowniaPosition $newPosition)
+    public function addPosition(FakturaXLPosition $newPosition)
     {
         array_push($this->positions, $newPosition);
     }
@@ -116,7 +116,7 @@ class FakturowniaInvoice extends FakturowniaDataObject
 
     public static function createFromJson($json)
     {
-        $invoice = new FakturowniaInvoice($json['kind'], $json['number'], $json['lang']);
+        $invoice = new FakturaXLInvoice($json['kind'], $json['number'], $json['lang']);
         $invoice->id = $json['id'];
         $invoice->paymentType = $json['payment_type'];
         $invoice->pattern = $json['pattern'];
@@ -177,7 +177,7 @@ class FakturowniaInvoice extends FakturowniaDataObject
         $invoice->positions = array();
 
         foreach ($json['positions'] as $jsonPosition) {
-            $position = FakturowniaPosition::createFromJson($jsonPosition);
+            $position = FakturaXLPosition::createFromJson($jsonPosition);
             $invoice->addPosition($position);
         }
 
@@ -249,8 +249,8 @@ class FakturowniaInvoice extends FakturowniaDataObject
 
         $data['positions'] = array();
 
-        foreach ($this->positions as $fakturowniaPosition) {
-            array_push($data['positions'], $fakturowniaPosition->toArray());
+        foreach ($this->positions as $FakturaXLPosition) {
+            array_push($data['positions'], $FakturaXLPosition->toArray());
         }
 
         $data['paid'] = $this->pricePaid;

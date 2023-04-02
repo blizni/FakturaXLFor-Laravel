@@ -1,8 +1,8 @@
 <?php
 
-namespace MattM\FFL\Helpers;
+namespace blizni\FXL\Helpers;
 
-class FakturowniaInvoiceKind
+class FakturaXLInvoiceKind
 {
     /**
      * Rodzaj faktury - faktura VAT

@@ -1,8 +1,8 @@
 <?php
 
-namespace MattM\FFL\Helpers;
+namespace blizni\FXL\Helpers;
 
-class FakturowniaPaymentMethod
+class FakturaXLPaymentMethod
 {
     /**
      * Metoda płatności - przelew

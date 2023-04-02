@@ -1,27 +1,27 @@
 <?php
 
-namespace MattM\FFL;
+namespace blizni\FXL;
 
 use Illuminate\Support\Facades\Http;
-use MattM\FFL\FakturowniaInvoice;
+use blizni\FXL\FakturaXLInvoice;
 
-class Fakturownia
+class FakturaXL
 {
     private static $token = '';
     private static $domain = '';
 
     public static function __constructStatic()
     {
-        self::$token = config('fakturownia.token');
-        self::$domain = config('fakturownia.domain');
+        self::$token = config('fakturaxl.token');
+        self::$domain = config('fakturaxl.domain');
     }
 
     private static function buildUrl()
     {
-        return "https://" . self::$domain . ".fakturownia.pl/";
+        return "https://" . self::$domain . ".fakturaxl.pl/";
     }
 
-    public static function createInvoice(FakturowniaInvoice $invoice)
+    public static function createInvoice(FakturaXLInvoice $invoice)
     {
         $data = array();
         $data['api_token'] = self::$token;

@@ -1,11 +1,11 @@
-# Fakturownia For Laravel
+# FakturaXL For Laravel
 
-[![Latest Version](https://img.shields.io/github/release/MattMoszczynski/Fakturownia-For-Laravel.svg?include_prereleases&label=packagist&style=flat-square)](https://packagist.org/packages/mattm/fakturownia-for-laravel)
-[![Last Commit](https://img.shields.io/github/last-commit/MattMoszczynski/Fakturownia-For-Laravel.svg?style=flat-square)](https://github.com/MattMoszczynski/Fakturownia-For-Laravel/commit/main)
-[![Issues](https://img.shields.io/github/issues/MattMoszczynski/Fakturownia-For-Laravel.svg?style=flat-square)](https://github.com/MattMoszczynski/Fakturownia-For-Laravel/issues)
-[![License](https://img.shields.io/github/license/MattMoszczynski/Fakturownia-For-Laravel.svg?style=flat-square)](https://github.com/MattMoszczynski/Fakturownia-For-Laravel/blob/main/LICENSE)
+[![Latest Version](https://img.shields.io/github/release/blizni/FakturaXL-For-Laravel.svg?include_prereleases&label=packagist&style=flat-square)](https://packagist.org/packages/blizni/fakturaxl-for-laravel)
+[![Last Commit](https://img.shields.io/github/last-commit/blizni/FakturaXL-For-Laravel.svg?style=flat-square)](https://github.com/blizni/FakturaXL-For-Laravel/commit/main)
+[![Issues](https://img.shields.io/github/issues/blizni/FakturaXL-For-Laravel.svg?style=flat-square)](https://github.com/blizni/FakturaXL-For-Laravel/issues)
+[![License](https://img.shields.io/github/license/blizni/FakturaXL-For-Laravel.svg?style=flat-square)](https://github.com/blizni/FakturaXL-For-Laravel/blob/main/LICENSE)
 
-A Laravel package for easy integration with Fakturownia (InvoiceOcean) API ([fakturownia.pl](https://fakturownia.pl), [invoiceocean.com](https://invoiceocean.com)). The package contains custom helper classes which allows easy management with invoices. 
+A Laravel package for easy integration with FakturaXL) API ([fakturaxl.pl](https://fakturaxl.pl)). The package contains custom helper classes which allows easy management with invoices. 
 
 ## Features of the package
 
@@ -22,16 +22,16 @@ The recommended way to install the package is by using
 [Composer](https://getcomposer.org/).
 
 ```bash
-composer require mattm/fakturownia-for-laravel
+composer require blizni/fakturaxl-for-laravel
 ```
 
 **After installation make sure to specify in your Laravel project these envelop keys:**
 
 ```env
-FAKTUROWNIA_DOMAIN=your_domain_prefix
-FAKTUROWNIA_TOKEN=your_generated_token
+FAKTURAXL_DOMAIN=your_domain_prefix
+FAKTURAXL_TOKEN=your_generated_token
 ```
 
 ## Documentation
 
-Documentation for this package can be find in a file [DOCUMENTATION.md](https://github.com/MattMoszczynski/Fakturownia-For-Laravel/blob/main/DOCUMENTATION.md).
+Documentation for this package can be find in a file [DOCUMENTATION.md](https://github.com/blizni/FakturaXL-For-Laravel/blob/main/DOCUMENTATION.md).

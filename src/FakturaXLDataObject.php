@@ -1,8 +1,8 @@
 <?php
 
-namespace MattM\FFL;
+namespace blizni\FXL;
 
-abstract class FakturowniaDataObject
+abstract class FakturaXLDataObject
 {
     public abstract function getID();
 

@@ -1,10 +1,10 @@
 <?php
 
-namespace MattM\FFL;
+namespace blizni\FXL;
 
-use MattM\FFL\FakturowniaDataObject;
+use blizni\FXL\FakturaXLDataObject;
 
-class FakturowniaPosition extends FakturowniaDataObject
+class FakturaXLPosition extends FakturaXLDataObject
 {
     private ?int $id = null;
     public string $name = "";
@@ -46,7 +46,7 @@ class FakturowniaPosition extends FakturowniaDataObject
 
     public static function createFromJson($json)
     {
-        $position = new FakturowniaPosition($json['name'], $json['quantity'], $json['total_price_gross'], false, $json['tax']);
+        $position = new FakturaXLPosition($json['name'], $json['quantity'], $json['total_price_gross'], false, $json['tax']);
         $position->id = $json['id'];
 
         if (isset($json['code']) && !empty($json['code'])) {

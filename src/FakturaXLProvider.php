@@ -1,10 +1,10 @@
 <?php
 
-namespace MattM\FFL;
+namespace blizni\FXL;
 
 use Illuminate\Support\ServiceProvider;
 
-class FakturowniaProvider extends ServiceProvider
+class FakturaXLProvider extends ServiceProvider
 {
     /**
      * Register services.
@@ -14,11 +14,11 @@ class FakturowniaProvider extends ServiceProvider
     public function register()
     {
         $this->mergeConfigFrom(
-            __DIR__ . '/../config/fakturownia.php', 'fakturownia'
+            __DIR__ . '/../config/fakturaxl.php', 'fakturaxl'
         );
 
-        $this->app->singleton(Fakturownia::class, function() {
-            return new Fakturownia();
+        $this->app->singleton(FakturaXL::class, function() {
+            return new FakturaXL();
         });
     }
 
@@ -30,7 +30,7 @@ class FakturowniaProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/../config/fakturownia.php' => config_path('fakturownia.php'),
+            __DIR__ . '/../config/fakturaxl.php' => config_path('fakturaxl.php'),
         ]);
     }
 }
